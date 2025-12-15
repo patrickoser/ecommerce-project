@@ -3,7 +3,7 @@
 const Header = () => {
 
     return (
-        <div className="">
+        <div className="flex">
             <h3>Home</h3>
             <h3>Search Bar</h3>
             <h3>Hamburger</h3>
