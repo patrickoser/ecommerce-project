@@ -1,10 +1,12 @@
 import { Product } from "../types/Product";
 
+interface ProductCardProps {
+    product: Product;
+    addToCart?: () => void;
+}
+
 const ProductCard = () => {
-    interface ProductCardProps {
-        product: Product;
-        
-    }
+
     return (
         <div className="">
             <h1 >ProductCard</h1>
