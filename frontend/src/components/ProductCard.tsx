@@ -5,12 +5,12 @@ interface ProductCardProps {
     addToCart?: () => void;
 }
 
-const ProductCard = () => {
+const ProductCard = ({ product }: ProductCardProps) => {
 
     return (
         <div className="">
             <h1 >ProductCard</h1>
-            
+            <p>{product.name}</p>
         </div>
     )
 }
