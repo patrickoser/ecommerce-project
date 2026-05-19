@@ -2,15 +2,18 @@ import { Product } from "../types/Product";
 
 interface ProductCardProps {
     product: Product;
-    addToCart?: () => void;
+    onAddToCart?: () => void;
 }
 
 const ProductCard = ({ product }: ProductCardProps) => {
 
     return (
         <div className="">
-            <h1 >ProductCard</h1>
-            <p>{product.name}</p>
+            <img src={product.imageUrl} alt={product.name} />
+            <h1 >{product.name}</h1>
+            <p>${product.price}</p>
+            <p>{product.inStock}</p>
+            <p>{product.description}</p>
         </div>
     )
 }
