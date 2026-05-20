@@ -1,4 +1,4 @@
-import { Product } from "../types/Product";
+import type { Product } from "../types/Product";
 
 interface ProductCardProps {
     product: Product;
@@ -13,7 +13,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
             <h1 >{product.name}</h1>
             <p>${product.price}</p>
             <p>{product.inStock}</p>
-            <p>{product.description}</p>
+            <p>{product.description ? 'In Stock' : 'Not In Stock'}</p>
         </div>
     )
 }
