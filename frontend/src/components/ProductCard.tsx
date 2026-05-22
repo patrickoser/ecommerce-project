@@ -8,7 +8,7 @@ interface ProductCardProps {
 const ProductCard = ({ product }: ProductCardProps) => {
 
     return (
-        <div className="">
+        <div id="product-card" className="">
             <img src={product.imageUrl} alt={product.name} />
             <h1 >{product.name}</h1>
             <p>${product.price}</p>
