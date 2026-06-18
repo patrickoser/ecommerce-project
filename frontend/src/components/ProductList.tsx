@@ -1,6 +1,6 @@
 import type { Product } from "../types/Product";
 import { products } from "../data/products";
-import { ProductCard } from "../components/ProductCard"
+import ProductCard from "../components/ProductCard"
 
 const ProductList = () => {
     return (
